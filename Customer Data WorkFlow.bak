@@ -1,0 +1,569 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="30" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="Customer ID" />
+            <Field name="Customer Name" />
+            <Field name="Segment" />
+            <Field name="Age" />
+            <Field name="Country" />
+            <Field name="City" />
+            <Field name="State" />
+            <Field name="Postal Code" />
+            <Field name="Region" />
+            <Field name="Territory" />
+          </Fields>
+          <Data>
+            <r>
+              <c>CG-12520</c>
+              <c>Claire Gute</c>
+              <c>Consumer</c>
+              <c>67</c>
+              <c>United States</c>
+              <c>Henderson</c>
+              <c>Kentucky</c>
+              <c>42420</c>
+              <c>South</c>
+              <c>Pacific</c>
+            </r>
+            <r>
+              <c>DV-13045</c>
+              <c>Darrin Van Huff</c>
+              <c>Corporate</c>
+              <c>31</c>
+              <c>United States</c>
+              <c>Los Angeles</c>
+              <c>California</c>
+              <c>90036</c>
+              <c>West</c>
+              <c>Europe</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Manual Entry Data File</Name>
+          <DefaultAnnotationText>Manual Entry Data File</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="126" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_20676_377f3d98b0820740afe121e0fb0696a9_\Engine_20676_d8bf43b3ac5d044ab084524459e2bd02~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>CSV Input Data File</Name>
+          <DefaultAnnotationText>CSV Input Data File</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer ID" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv" type="V_WString" />
+            <Field name="Customer Name" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv" type="V_WString" />
+            <Field name="Segment" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv" type="V_WString" />
+            <Field name="Age" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv" type="V_WString" />
+            <Field name="Country" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv" type="V_WString" />
+            <Field name="City" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv" type="V_WString" />
+            <Field name="State" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv" type="V_WString" />
+            <Field name="Postal Code" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv" type="V_WString" />
+            <Field name="Region" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West_Arizono.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_20676_377f3d98b0820740afe121e0fb0696a9_\Engine_20676_9ea4798895b98e4d9578fde404e1391e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="294" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Tab Delimited Input Data File</Name>
+          <DefaultAnnotationText>Tab Delimited Input Data File</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer ID" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt" type="V_String" />
+            <Field name="Customer Name" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt" type="V_String" />
+            <Field name="Segment" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt" type="V_String" />
+            <Field name="Age" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt" type="V_String" />
+            <Field name="Country" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt" type="V_String" />
+            <Field name="Postal Code" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt" type="V_String" />
+            <Field name="Region" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_Central.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_20676_377f3d98b0820740afe121e0fb0696a9_\Engine_20676_b8e2ec5cd2d54f438f5693ba196b66bd~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="438" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="50">C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Excel Data File</Name>
+          <DefaultAnnotationText>Excel Data File</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer ID" size="255" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Customer Name" size="255" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Segment" size="255" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Age" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Country" size="255" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="City" size="255" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="State" size="255" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`" type="V_WString" />
+            <Field name="Postal Code" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Region" size="255" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_East.xlsx|||`Sheet1$`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="534" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_20676_377f3d98b0820740afe121e0fb0696a9_\Engine_20676_ffa7731e3393e3449d761b7aef9def43~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="582" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="57">C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <AllowShareWrite>False</AllowShareWrite>
+            <FileNameEncoding>0</FileNameEncoding>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <IgnoreErrors>False</IgnoreErrors>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <FileFormatInner>0</FileFormatInner>
+            <LargeZipFiles>False</LargeZipFiles>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>ZIP Data File</Name>
+          <DefaultAnnotationText>CustomerData_South.zip
+Query=CustomerData_South.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer ID" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv" type="V_WString" />
+            <Field name="Customer Name" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv" type="V_WString" />
+            <Field name="Segment" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv" type="V_WString" />
+            <Field name="Age" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv" type="V_WString" />
+            <Field name="Country" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv" type="V_WString" />
+            <Field name="City" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv" type="V_WString" />
+            <Field name="State" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv" type="V_WString" />
+            <Field name="Postal Code" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv" type="V_WString" />
+            <Field name="Region" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_South.zip|||CustomerData_South.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="690" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_20676_377f3d98b0820740afe121e0fb0696a9_\Engine_20676_7231f6feee51e74bab29f7807ea3bc38~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+        <Position x="762" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Directory>C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West</Directory>
+          <FileSpec>*.csv</FileSpec>
+          <IncludeSubDirs value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Folder Data File</Name>
+          <DefaultAnnotationText>Folder Data File</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="870" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_20676_377f3d98b0820740afe121e0fb0696a9_\Engine_20676_17a0e4674f3abf47922977b6704a5354~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="882" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer Data\CustomerData_West\CustomerData_West_California.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ReadList</Mode>
+          <ReadList_Field>FullPath</ReadList_Field>
+          <ReadList_Type>Path</ReadList_Type>
+          <ErrorBehaviour>Error</ErrorBehaviour>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Dynamic Input Data Tool</Name>
+          <DefaultAnnotationText>Dynamic Input Data Tool</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_20676_377f3d98b0820740afe121e0fb0696a9_\Engine_20676_ac610f8377016841a632e32557ee549c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Customer Data WorkFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4bfa879f-8832-468e-b473-48273d04306a" />
+      <Telemetry>
+        <PreviousWorkflowId value="153aa521-d52e-459d-98d2-b95020e20634" />
+        <OriginWorkflowId value="153aa521-d52e-459d-98d2-b95020e20634" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

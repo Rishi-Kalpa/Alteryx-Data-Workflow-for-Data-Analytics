@@ -1,0 +1,3157 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <ReadCentroids>False</ReadCentroids>
+            <Query>select postgres."public".sales.order_line,
+	postgres."public".sales.order_id,
+	postgres."public".sales.order_date,
+	postgres."public".sales.ship_date,
+	postgres."public".sales.ship_mode,
+	postgres."public".sales.customer_id,
+	postgres."public".sales.product_id,
+	postgres."public".sales.sales,
+	postgres."public".sales.quantity,
+	postgres."public".sales.discount,
+	postgres."public".sales.profit 
+from postgres."public".sales</Query>
+            <TableStyle>Quoted</TableStyle>
+            <PostSQL />
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">a0062545-6aae-4e6d-ae84-16a8a212b8ab</Connection>
+            <NoProgress>True</NoProgress>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>PostgreSQL Data File</Name>
+          <DefaultAnnotationText>PostgreSQL Data File</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="order_line" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="Int32" />
+            <Field name="order_id" size="255" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="V_String" />
+            <Field name="order_date" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="Date" />
+            <Field name="ship_date" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="Date" />
+            <Field name="ship_mode" size="255" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="V_String" />
+            <Field name="customer_id" size="255" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="V_String" />
+            <Field name="product_id" size="255" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="V_String" />
+            <Field name="sales" scale="6" size="30" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="FixedDecimal" />
+            <Field name="quantity" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="Int32" />
+            <Field name="discount" scale="6" size="30" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="FixedDecimal" />
+            <Field name="profit" scale="6" size="30" source="File: select postgres.&quot;public&quot;.sales.order_line,&#xA;	postgres.&quot;public&quot;.sales.order_id,&#xA;	postgres.&quot;public&quot;.sales.order_date,&#xA;	postgres.&quot;public&quot;.sales.ship_date,&#xA;	postgres.&quot;public&quot;.sales.ship_mode,&#xA;	postgres.&quot;public&quot;.sales.customer_id,&#xA;	postgres.&quot;public&quot;.sales.product_id,&#xA;	postgres.&quot;public&quot;.sales.sales,&#xA;	postgres.&quot;public&quot;.sales.quantity,&#xA;	postgres.&quot;public&quot;.sales.discount,&#xA;	postgres.&quot;public&quot;.sales.profit &#xA;from postgres.&quot;public&quot;.sales" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_aa684865d29fbc4e8d23faf28470e931~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SalesforAWS.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Order Line" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Order ID" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Order Date" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Ship Date" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Ship Mode" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Customer ID" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Product ID" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Sales" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Quantity" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Discount" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+            <Field name="Profit" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Sales Data\SalesforAWS.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_0cb7eef9efcb0a4b81f7d7cc6d77cef7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="174" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Order Date</InputFieldName>
+          <Language>English</Language>
+          <Format>MM/dd/yyyy</Format>
+          <OutputFieldName>Order Date New</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Order Date From:
+MM/dd/yyyy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="282" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_23e4039097836b459763b71bb863fd2f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="282" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Ship Date</InputFieldName>
+          <Language>English</Language>
+          <Format>MM/dd/yyyy</Format>
+          <OutputFieldName>Ship Date New</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Ship Date From:
+MM/dd/yyyy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_97ccb87f34e61548984de1acb8cb71a7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="378" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Order Line" selected="True" type="Int32" size="4" />
+            <SelectField field="Order ID" selected="True" type="V_String" size="254" />
+            <SelectField field="Order Date New" selected="True" rename="Order Date" />
+            <SelectField field="Ship Date New" selected="True" rename="Ship Date" />
+            <SelectField field="Order Date" selected="False" />
+            <SelectField field="Ship Date" selected="False" />
+            <SelectField field="Ship Mode" selected="True" type="V_String" size="254" />
+            <SelectField field="Customer ID" selected="True" type="V_String" size="254" />
+            <SelectField field="Product ID" selected="True" type="V_String" size="254" />
+            <SelectField field="Sales" selected="True" type="FixedDecimal" size="19.6" />
+            <SelectField field="Quantity" selected="True" type="Int32" size="4" />
+            <SelectField field="Discount" selected="True" type="FixedDecimal" size="19.6" />
+            <SelectField field="Profit" selected="True" type="FixedDecimal" size="19.6" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_b007c993a0007a4895456b1c391dab6f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="546" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByPos</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Union - Appending 2 sets of data together</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="654" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_f418f9112eafd5409e4f72bc16bbefef~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="DateTimeNow">
+        <Position x="246" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Language">English</Value>
+          <Value name="OutputFormat">yyyy-MM-dd hh:mm:ss</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="DateTimeNow\Supporting_Macros\DTNEngine.yxmc" EngineDll="Macro" EngineDllEntryPoint="DateTimeNow\Supporting_Macros\DTNEngine.yxmc" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_575f38bc0e53964fa1ee9056355d78b2~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="654" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeDiff([Ship Date],[Order Date],&quot;Days&quot;)" field="Num_Days" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Formula Num_Days = DateTimeDiff([Ship Date],[Order Date],"Days")
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[Num_Days = DateTimeDiff([Ship Date],[Order Date],"Days")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="762" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_3fdfefee2feed74ba6a0453b1062f7ce~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="762" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="Sales" />
+            <Field name="Order Line" selected="False" />
+            <Field name="Quantity" selected="False" />
+            <Field name="Discount" selected="False" />
+            <Field name="Profit" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <NewFieldAddOn>New_</NewFieldAddOn>
+          <NewFieldAddOnPos>Prefix</NewFieldAddOnPos>
+          <CopyOutput value="True" />
+          <Expression>[Quantity]*[Sales]</Expression>
+          <ChangeFieldType value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Multi-Field Formula [Quantity]*[Sales]</AnnotationText>
+          <DefaultAnnotationText>[Quantity]*[Sales]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="870" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="Profit" />
+            <Field name="Order Line" selected="False" />
+            <Field name="Sales" selected="False" />
+            <Field name="Quantity" selected="False" />
+            <Field name="Discount" selected="False" />
+            <Field name="New_Sales" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <NewFieldAddOn>New_</NewFieldAddOn>
+          <NewFieldAddOnPos>Prefix</NewFieldAddOnPos>
+          <CopyOutput value="True" />
+          <Expression>[Quantity]*[Profit]</Expression>
+          <ChangeFieldType value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Multi-Field Formula [Quantity]*[Profit]</AnnotationText>
+          <DefaultAnnotationText>[Quantity]*[Profit]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_1ae65ddd04097c49a3b244bc328914dd~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="990" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Num_Days] &gt;= "0"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter [Num_Days] &gt;= "0"</AnnotationText>
+          <DefaultAnnotationText>[Num_Days] &gt;= "0"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1086" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_763b4305c68f064b8cb6a261fb9b7ce0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1086" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_f71462a4ac02044d8183c67654478607~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1014" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Customer_Final.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer ID" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+            <Field name="Customer Name" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+            <Field name="Segment" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+            <Field name="Age" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+            <Field name="Country" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+            <Field name="Postal Code" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+            <Field name="Age Category" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Customer_Final.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1110" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_a76475224664ad459a2beea6777da29f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1230" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Customer ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Customer ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Customer ID" selected="False" rename="Right_Customer ID" input="Right_" />
+                <SelectField field="Right_Age" selected="True" input="Right_" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Joins - Merging Sales and Customer Data File</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1338" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_acb30a4578aba147a4579ada877a342f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1374" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_217b5e230994f04d9ddeb5f6fe681d8f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1338" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_30dc3fd81d566f4988f2541022d803c8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1326" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product_Final.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Product_Final.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Product_ID" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product_Final.csv" type="V_String" />
+            <Field name="Category" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product_Final.csv" type="V_String" />
+            <Field name="Sub_Category" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product_Final.csv" type="V_String" />
+            <Field name="Product_Name" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product_Final.csv" type="V_String" />
+            <Field name="New_Prod_ID1" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product_Final.csv" type="V_String" />
+            <Field name="New_Prod_ID2" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product_Final.csv" type="V_String" />
+            <Field name="New_Prod_ID3" size="254" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product_Final.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1434" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_0dc61e94dabc7642a8b21e8d752a93ec~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1494" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Product ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Product_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Product_ID" selected="False" input="Right_" />
+                <SelectField field="Right_New_Prod_ID1" selected="False" input="Right_" />
+                <SelectField field="Right_New_Prod_ID2" selected="False" input="Right_" />
+                <SelectField field="Right_New_Prod_ID3" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1614" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_ed6cf6c47a307e4e9b1b2b6dcfa7d030~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1614" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_0a58a8620bdf484db2eef8ef53d484ed~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1614" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_c46709b410631f4f9e47693958bd102f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1722" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Order Line" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Order Line - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1806" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_a1af46f748f9df4fbadae03a45120b0f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1866" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeYear([Order Date])" field="Year" size="4" type="Int32" />
+            <FormulaField expression="DateTimeMonth([Order Date])" field="Month" size="4" type="Int32" />
+            <FormulaField expression="DateTimeNow()" field="Time" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Year = DateTimeYear([Order Date])
+Month = DateTimeMonth([Order Date])
+Time = Dat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1962" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_b02482707525fd44bea285a4f15325aa~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2046" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Region" action="GroupBy" rename="Region" />
+            <SummarizeField field="Sales" action="Sum" rename="Sum_Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2142" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_34203e3df4ffb34eaae76efdc0f916e0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2046" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Segment" action="GroupBy" rename="Segment" />
+            <SummarizeField field="Profit" action="Sum" rename="Sum_Profit" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2046" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Age Category" action="GroupBy" rename="Age Category" />
+            <SummarizeField field="Sales" action="Sum" rename="Sum_Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2046" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Profit" action="Sum" rename="Sum_Profit" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2142" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_f2cd9b4a1326c74db983b81d78126b63~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2142" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_c25b46038db1284090854cf6ed903e29~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2142" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_656d336ee60ddc4cb1c55f132c8bf0e0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2046" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Segment" action="GroupBy" rename="Segment" />
+            <SummarizeField field="Sales" action="NPV" rename="NPV_Sales">
+              <DiscountRate value="0.08" />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2142" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_c093666ea964d14989d5ffcedf0470d0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2046" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Profit" action="NPV" rename="NPV_Profit">
+              <DiscountRate value="0.08" />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2142" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_ec4290f0d5d8294e8aed505572517b39~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RunningTotal.RunningTotal">
+        <Position x="2262" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupByFields />
+          <RunningTotalFields>
+            <Field field="Sales" />
+            <Field field="Profit" />
+          </RunningTotalFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Running Total - Sales and Profit</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRunningTotal" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2382" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_98e32a814660f147a173cd5264436173~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RunningTotal.RunningTotal">
+        <Position x="2262" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupByFields>
+            <Field field="Year" />
+          </GroupByFields>
+          <RunningTotalFields>
+            <Field field="Sales" />
+            <Field field="Profit" />
+          </RunningTotalFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Running Total - Group By Date and Cumulative total of Sales and Profit</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRunningTotal" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2382" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_aa19ce33e3b4614eb7b7ed54f240b17d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="2262" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Age Category" />
+          </GroupFields>
+          <HeaderField field="Category" />
+          <DataField field="Sales" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Cross Tab - Age Category WRT Category Wise Sales Result</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Age Category" size="254" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Furniture" source="CrossTab:Header:Category:Furniture:Sum:" type="Double" />
+            <Field name="Office_Supplies" source="CrossTab:Header:Category:Office Supplies:Sum:" type="Double" />
+            <Field name="Technology" source="CrossTab:Header:Category:Technology:Sum:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2382" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_26def229bdecd24e97e6bac0d7cd116e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="2262" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Region" />
+          </GroupFields>
+          <HeaderField field="Segment" />
+          <DataField field="Profit" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Cross Tab - Region WRT Segment Wise Profit Result</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Region" size="254" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Consumer" source="CrossTab:Header:Segment:Consumer:Sum:" type="Double" />
+            <Field name="Corporate" source="CrossTab:Header:Segment:Corporate:Sum:" type="Double" />
+            <Field name="Home_Office" source="CrossTab:Header:Segment:Home Office:Sum:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2382" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_10ef145a9ec6be4cae8f58798fd18892~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="2262" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Year" />
+          </GroupFields>
+          <HeaderField field="Month" />
+          <DataField field="Sales" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Cross Tab - Date and Month</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="1" source="CrossTab:Header:Month:1:Sum:" type="Double" />
+            <Field name="2" source="CrossTab:Header:Month:2:Sum:" type="Double" />
+            <Field name="3" source="CrossTab:Header:Month:3:Sum:" type="Double" />
+            <Field name="4" source="CrossTab:Header:Month:4:Sum:" type="Double" />
+            <Field name="5" source="CrossTab:Header:Month:5:Sum:" type="Double" />
+            <Field name="6" source="CrossTab:Header:Month:6:Sum:" type="Double" />
+            <Field name="7" source="CrossTab:Header:Month:7:Sum:" type="Double" />
+            <Field name="8" source="CrossTab:Header:Month:8:Sum:" type="Double" />
+            <Field name="9" source="CrossTab:Header:Month:9:Sum:" type="Double" />
+            <Field name="10" source="CrossTab:Header:Month:10:Sum:" type="Double" />
+            <Field name="11" source="CrossTab:Header:Month:11:Sum:" type="Double" />
+            <Field name="12" source="CrossTab:Header:Month:12:Sum:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2382" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_fdf4b0407c610940b0616db8c8de80c0~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="2382" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Year" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Year" selected="False" />
+            <Field field="1" selected="True" />
+            <Field field="2" selected="True" />
+            <Field field="3" selected="True" />
+            <Field field="4" selected="True" />
+            <Field field="5" selected="True" />
+            <Field field="6" selected="True" />
+            <Field field="7" selected="True" />
+            <Field field="8" selected="True" />
+            <Field field="9" selected="True" />
+            <Field field="10" selected="True" />
+            <Field field="11" selected="True" />
+            <Field field="12" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Transpose</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2898" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_9d5f929d48d9f04ba73dcee4e7072eee~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="2478" y="906" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Year" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Year - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings>
+        <Position x="2262" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Count Records</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2382" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_9e9784786ef6e94f98ae2c3a809c7e2e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2586" y="906" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="Month" />
+            <SelectField field="Value" selected="True" rename="Sales" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Select - Renaming the Field Names</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2706" y="906" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Sales</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-06-28 22:57:56</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2023-06-28 22:57:56</StartDate>
+              <EndDate>2023-06-28 22:57:56</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Sales])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2814" y="978" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_7d35cef41ebdb1499f5aef9beec31540~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="2802" y="882" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Month" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Month - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="VisualLayout">
+        <Position x="2862" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <LayoutFields>
+            <Document>
+              <TempFileType>pdf</TempFileType>
+              <PortraitMode value="true" />
+              <RenderType>PDF</RenderType>
+              <PaperType bottom="48" height="1056" left="48" right="48" top="48" width="816">
+                <PageType>Letter (8.5in x 11in)</PageType>
+                <MarginType>0.5in</MarginType>
+              </PaperType>
+            </Document>
+            <Layout>
+              <Node fusedChildren="false" key="1" orientation="vertical" repeatDirection="vertical">
+                <Node connectionName="#7" fieldName="Text" height="26" isFused="false" isLocked="true" key="2" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Text:" subWidth0="719" subWidthCount="1" top="0" width="719" />
+                <Node connectionName="#1" fieldName="Chart" height="717" isFused="false" isLocked="true" key="3" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Chart:" subWidth0="717" subWidthCount="1" top="0" width="717" />
+                <Node connectionName="#6" fieldName="Table" height="56.65625" isFused="false" isLocked="true" key="6" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Table:Basic:" subWidth0="718" subWidthCount="1" top="40" width="718" />
+                <Node connectionName="#5" fieldName="Table" height="59.3125" isFused="false" isLocked="true" key="7" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Table:Basic:" subWidth0="719" subWidthCount="1" top="32" width="719" />
+                <Node connectionName="#4" fieldName="Chart" height="672.796875" isFused="false" isLocked="true" key="8" left="85" orientation="horizontal" repeatDirection="vertical" source="Report:Chart:" subWidth0="560" subWidthCount="1" top="49" width="560" />
+                <Node connectionName="#3" fieldName="Chart" height="563" isFused="false" isLocked="true" key="11" left="85" orientation="horizontal" repeatDirection="vertical" source="Report:Chart:" subWidth0="563" subWidthCount="1" top="16" width="563" />
+                <Node connectionName="#2" fieldName="Chart" height="581" isFused="false" isLocked="true" key="9" left="78" orientation="horizontal" repeatDirection="vertical" source="Report:Chart:" subWidth0="581" subWidthCount="1" top="11" width="581" />
+              </Node>
+            </Layout>
+            <TempFiles>{"#1":"C:\\Users\\RISHIK~1\\AppData\\Local\\Temp\\Engine_1516_5afca796e873224a93743c43bf043bd7_\\Engine_9548_071f9fe846324b37818d10bcdef56fa6_.yxdb","#2":"C:\\Users\\RISHIK~1\\AppData\\Local\\Temp\\Engine_1516_5afca796e873224a93743c43bf043bd7_\\Engine_9548_baf02c6662804031b7a13421e729dd96_.yxdb","#3":"C:\\Users\\RISHIK~1\\AppData\\Local\\Temp\\Engine_1516_5afca796e873224a93743c43bf043bd7_\\Engine_9548_8a14063e03c24509b8e7ad1c088eb06a_.yxdb","#4":"C:\\Users\\RISHIK~1\\AppData\\Local\\Temp\\Engine_1516_5afca796e873224a93743c43bf043bd7_\\Engine_9548_16a0606f92604a0d922f0aad43ab8eea_.yxdb","#5":"C:\\Users\\RISHIK~1\\AppData\\Local\\Temp\\Engine_1516_5afca796e873224a93743c43bf043bd7_\\Engine_9548_86eb4fce0e72483baa09f3d3bb25d6bc_.yxdb","#6":"C:\\Users\\RISHIK~1\\AppData\\Local\\Temp\\Engine_1516_5afca796e873224a93743c43bf043bd7_\\Engine_9548_a43cf578bcbe4ec3b240e24d5486bf67_.yxdb","#7":"C:\\Users\\RISHIK~1\\AppData\\Local\\Temp\\Engine_1516_5afca796e873224a93743c43bf043bd7_\\Engine_9548_4d725c9ffbfa4ee1bbeadac0b0294c17_.yxdb"}</TempFiles>
+            <OriginalSnippets>{"#7":{"Text":["C:\\Users\\Rishi Kalpa Mukherje\\AppData\\Local\\Temp\\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_\\Alteryx_9548_c2e5e147-0c6b-471b-bba4-88fbb18270d3_.html"]},"#3":{"Chart":["C:\\Users\\Rishi Kalpa Mukherje\\AppData\\Local\\Temp\\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_\\Alteryx_9548_afb4c3a4-7990-4a74-b8fd-72516c538028_.html"]},"#4":{"Chart":["C:\\Users\\Rishi Kalpa Mukherje\\AppData\\Local\\Temp\\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_\\Alteryx_9548_d8029c6a-f2d3-4a7c-be32-85dc3c9a7112_.html"]},"#5":{"Table":["C:\\Users\\Rishi Kalpa Mukherje\\AppData\\Local\\Temp\\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_\\Alteryx_9548_0f815ba5-29ad-49dd-8a73-e7e60128a126_.html"]},"#1":{"Chart":["C:\\Users\\Rishi Kalpa Mukherje\\AppData\\Local\\Temp\\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_\\Alteryx_9548_922d9de1-6af8-48db-9f14-21f24f71bfbd_.html"]},"#6":{"Table":["C:\\Users\\Rishi Kalpa Mukherje\\AppData\\Local\\Temp\\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_\\Alteryx_9548_ff207452-a86e-4728-bc55-197fd19363b0_.html"]},"#2":{"Chart":["C:\\Users\\Rishi Kalpa Mukherje\\AppData\\Local\\Temp\\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_\\Alteryx_9548_f2ffe043-6fcb-4d27-ba8f-8574946b7d23_.html"]}}</OriginalSnippets>
+            <OriginalThumbnails>{"#7":{},"#3":{},"#4":{},"#5":{"Table":["C:\\Users\\Rishi Kalpa Mukherje\\AppData\\Local\\Temp\\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_\\Alteryx_9548_9659b590-6ef2-40c7-a3b6-235bc405c890_.html"]},"#1":{},"#6":{"Table":["C:\\Users\\Rishi Kalpa Mukherje\\AppData\\Local\\Temp\\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_\\Alteryx_9548_721342b0-008f-4361-9fdc-55e767a93e91_.html"]},"#2":{}}</OriginalThumbnails>
+            <AllowResizing>true</AllowResizing>
+            <CanJoin>true</CanJoin>
+            <VisFolderPath>C:\Users\Rishi Kalpa Mukherje\AppData\Local\Temp\Alteryx_9548_9cd93b77-666e-4eb5-be61-a0a45b508a22_</VisFolderPath>
+            <NumDeletions>2</NumDeletions>
+            <NumTinaToggleUses>0</NumTinaToggleUses>
+            <NumSnippetMoves>20</NumSnippetMoves>
+            <NumSnippetRearrangements>3</NumSnippetRearrangements>
+            <NumIncomingConnections>7</NumIncomingConnections>
+          </LayoutFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerVisualLayout" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="2502" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <orientation>v</orientation>
+              <type>bar</type>
+              <ysrc>Sum_Sales</ysrc>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+                <colorscale json:Array="true">
+                  <colorscale>0</colorscale>
+                  <colorscale>#f7fbff</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.125</colorscale>
+                  <colorscale>#deebf7</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.25</colorscale>
+                  <colorscale>#c6dbef</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.375</colorscale>
+                  <colorscale>#9ecae1</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.5</colorscale>
+                  <colorscale>#6baed6</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.625</colorscale>
+                  <colorscale>#4292c6</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.75</colorscale>
+                  <colorscale>#2171b5</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.875</colorscale>
+                  <colorscale>#08519c</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>1</colorscale>
+                  <colorscale>#08306b</colorscale>
+                </colorscale>
+                <showscale>true</showscale>
+                <colorsrc>Sum_Sales</colorsrc>
+                <color>764404.59</color>
+                <color>518790.65</color>
+                <color>402032.06</color>
+                <color>611494.82</color>
+              </marker>
+              <xsrc>Region</xsrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Sales</aggregationFieldName>
+              <name>Region Wise Sales</name>
+              <autocolorscale>false</autocolorscale>
+              <textsrc>Sum_Sales</textsrc>
+              <textfont>
+                <size>12</size>
+              </textfont>
+            </Traces>
+            <Layout>
+              <title>
+                <text>Region Wise Sales</text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>497</width>
+              <height>497</height>
+              <showlegend>false</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-1</range>
+                <range>4</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Region</text>
+                </title>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>-35597.648493774468</range>
+                <range>853663.112044688</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Sales</text>
+                </title>
+                <showline>false</showline>
+                <showgrid>false</showgrid>
+                <type>linear</type>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>50</t>
+                <b>50</b>
+                <l>50</l>
+                <r>50</r>
+              </margin>
+              <barmode>stack</barmode>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+                <orientation>v</orientation>
+              </legend>
+              <bargap>0.18000000000000005</bargap>
+              <ppi>72</ppi>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="2502" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>bar</type>
+              <mode>markers</mode>
+              <name>&amp;nbsp;&lt;b&gt;Segment Wise Profit&lt;/b&gt;&amp;nbsp;</name>
+              <orientation>h</orientation>
+              <xsrc>Sum_Profit</xsrc>
+              <aggregationField>xsrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Profit</aggregationFieldName>
+              <ysrc>Segment</ysrc>
+              <textposition>inside</textposition>
+              <marker>
+                <line>
+                  <width>2</width>
+                </line>
+                <colorsrc>Sum_Profit</colorsrc>
+                <color>134091.8</color>
+                <color>91835.86</color>
+                <color>60299.01</color>
+                <showscale>true</showscale>
+              </marker>
+              <textsrc>Sum_Profit</textsrc>
+              <textfont>
+                <size>14</size>
+              </textfont>
+            </Traces>
+            <Layout>
+              <title>
+                <text>Segment Wise Profit</text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>497</width>
+              <height>497</height>
+              <showlegend>false</showlegend>
+              <hovermode>closest</hovermode>
+              <bargap>0.19999999999999996</bargap>
+              <margin>
+                <pad>1</pad>
+                <t>50</t>
+                <b>50</b>
+                <l>79</l>
+                <r>50</r>
+              </margin>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+              <barmode>overlay</barmode>
+              <paper_bgcolor>rgb(255, 255, 255)</paper_bgcolor>
+              <ppi>72</ppi>
+              <barnorm>0</barnorm>
+              <xaxis>
+                <range>0</range>
+                <range>141149.26315789472</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Profit</text>
+                </title>
+                <type>linear</type>
+                <tickfont>
+                  <size>12</size>
+                  <color>rgb(255, 255, 255)</color>
+                </tickfont>
+                <nticks>0</nticks>
+              </xaxis>
+              <yaxis>
+                <range>-0.5</range>
+                <range>2.5</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Segment</text>
+                </title>
+                <type>category</type>
+                <tickfont>
+                  <color>rgb(255, 255, 255)</color>
+                </tickfont>
+              </yaxis>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="2502" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>pie</type>
+              <mode>lines</mode>
+              <boxpoints>false</boxpoints>
+              <autocolorscale>true</autocolorscale>
+              <valuessrc>Sum_Sales</valuessrc>
+              <labelssrc>Age Category</labelssrc>
+              <name>Age Category Wise Sales</name>
+              <marker>
+                <line>
+                  <width>2</width>
+                </line>
+              </marker>
+              <hole>0</hole>
+              <textinfo>label+value+percent</textinfo>
+              <sort>true</sort>
+              <hoverinfo>percent+label+value+name</hoverinfo>
+            </Traces>
+            <Layout>
+              <title>
+                <text>Age Category Wise Sales</text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>500</width>
+              <height>500</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-6896562.5178659568</range>
+                <range>8662662.9928877167</range>
+                <autorange>false</autorange>
+              </xaxis>
+              <yaxis>
+                <range>-158.94045988016876</range>
+                <range>159.757429566094</range>
+                <autorange>false</autorange>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>50</t>
+                <b>50</b>
+                <l>50</l>
+                <r>50</r>
+              </margin>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+                <orientation>h</orientation>
+                <traceorder>normal</traceorder>
+              </legend>
+              <extendpiecolors>true</extendpiecolors>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="2502" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>scatter</type>
+              <mode>lines+markers</mode>
+              <xsrc>Sum_Profit</xsrc>
+              <aggregationField>xsrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Profit</aggregationFieldName>
+              <ysrc>Category</ysrc>
+              <name>Category Wise Profit</name>
+              <line>
+                <width>2</width>
+              </line>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+                <size>10</size>
+                <symbol>star-diamond</symbol>
+                <color>#1f77b4</color>
+              </marker>
+              <fill>none</fill>
+            </Traces>
+            <Layout>
+              <title>
+                <text>Category Wise Profit</text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>496.8</width>
+              <height>597.6</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>17491.77911494653</range>
+                <range>157808.67665782932</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Profit</text>
+                </title>
+                <type>linear</type>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+              </xaxis>
+              <yaxis>
+                <range>-0.365878425388112</range>
+                <range>2.090056948113328</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Category</text>
+                </title>
+                <type>category</type>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>50.4</t>
+                <b>57.6</b>
+                <l>100.8</l>
+                <r>50.4</r>
+              </margin>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+                <orientation>h</orientation>
+                <traceorder>normal</traceorder>
+              </legend>
+              <ppi>72</ppi>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="2502" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False">
+            <Field name="Age Category" />
+            <Field name="Furniture" />
+            <Field name="Office_Supplies" />
+            <Field name="Technology" />
+          </GroupingFields>
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Age Category" selected="True" Alignment="Right" />
+            <Field name="Furniture" selected="True" Alignment="Right" />
+            <Field name="Office_Supplies" selected="True" Alignment="Right" />
+            <Field name="Technology" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="9" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="0" />
+            <Style Name="Header" Font="B-Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="1" ColumnPadding="1" TableBorder="true" Width="2" BorderColor="#000000" />
+            <Style Name="BarGraph" Width="100" Height="15" AutoScale="true" Min="0" Max="100" BaseValue="0" LabelBars="true" ColorMode="Single" TextColor="#b0c4de" BarPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" BarFormula="&quot;Green&quot;" OutlineBars="true" OutlineColor="#000000" />
+          </TableStyles>
+          <StyleRules>
+            <Rule Name="cdc8c8bb-4520-44da-ad1d-4d71398cf8c0">
+              <RowRule value="True" />
+              <HighPrecedence value="False" />
+              <Field />
+              <Test>Always</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar />
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>1</SimpleConst>
+              <Formula>1</Formula>
+              <Style />
+              <PrettyName>Row Rule 1</PrettyName>
+            </Rule>
+          </StyleRules>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2598" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_233ff58d6fd42240956e474635a0dd57~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="2502" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False">
+            <Field name="Region" />
+            <Field name="Consumer" />
+            <Field name="Corporate" />
+            <Field name="Home_Office" />
+          </GroupingFields>
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Region" selected="True" Alignment="Right" />
+            <Field name="Consumer" selected="True" Alignment="Right" />
+            <Field name="Corporate" selected="True" Alignment="Right" />
+            <Field name="Home_Office" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="9" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="0" />
+            <Style Name="Header" Font="B-Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="1" ColumnPadding="1" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2598" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_9a978fe5013445459f2e42b01abc34d8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2598" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_9d4e2e20512bc94eb81e566bab2b854d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2598" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_b26cc5abfd9bfa41a921a2bc83807537~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2598" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_3295bcd500fabe4f84d85056dff4bc00~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="2358" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\qc\b\fs24 Number of Records : [Count:0]\b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Number of Records : [Count:0]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2454" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_25d807c89278354194c1dd2674303e36~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2598" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_1516_5afca796e873224a93743c43bf043bd7_\Engine_1516_14fc4215463d464c832ad4b573304713~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="ReportHeader">
+        <Position x="2958" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="HeaderText">Alteryx Report</Value>
+          <Value name="OutputFormat">yyyy-MM-dd hh:mm:ss</Value>
+          <Value name="Language">English</Value>
+          <Value name="IncludeDate">True</Value>
+          <Value name="ImageFile">
+          </Value>
+          <Value name="OwnLogo">false</Value>
+          <Value name="IncludeImage">True</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="ReportHeader\Supporting_Macros\RHEngine.yxmc" EngineDll="Macro" EngineDllEntryPoint="ReportHeader\Supporting_Macros\RHEngine.yxmc" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings>
+        <Position x="3054" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="CopyrightText">© [CurrentYear] Alteryx, Inc.  All rights reserved. Alteryx is a registered trademark of Alteryx, Inc.</Value>
+          <Value name="InfoText">Alteryx, Inc. - info@alteryx.com - &lt;Link www.alteryx.com|www.alteryx.com&gt;  - 888 836 4274</Value>
+          <Value name="PageNumbers">True</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="FooterMacro.yxmc" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="3150" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType>pdf</TempFileType>
+          <BatchMode value="False" />
+          <DataField>Layout</DataField>
+          <Separator>Continuous</Separator>
+          <EmbedDependencies value="False" />
+          <ShowHeader value="True" />
+          <HeaderField>Header</HeaderField>
+          <ShowFooter value="True" />
+          <FooterField>Footer</FooterField>
+          <OnFirstPage value="True" />
+          <HeaderFooterEdge Distance="0" />
+          <PortraitMode value="True" />
+          <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="SQL">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="AWS">
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="DTN" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="False" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="26" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="26" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Left" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Join" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Right" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Join" />
+      <Destination ToolID="32" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Join" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Left" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Right" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Join" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="65" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output9" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output9" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="False" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="True" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="89" Connection="Report Layout" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection name="#6">
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection name="#7">
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output13" />
+      <Destination ToolID="90" Connection="Report Layout" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Sales Data WorkFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="12279c25-eb15-4983-9a06-2ff02629f1ba" />
+      <Telemetry>
+        <PreviousWorkflowId value="7b8728e1-3113-4b43-b118-378419f16ff1" />
+        <OriginWorkflowId value="7b8728e1-3113-4b43-b118-378419f16ff1" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

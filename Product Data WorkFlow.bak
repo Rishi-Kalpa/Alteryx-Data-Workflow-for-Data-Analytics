@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="37">C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product Data\ProductXMLFull.xml</File>
+          <FormatSpecificOptions>
+            <ParseRoot>False</ParseRoot>
+            <OuterXML>False</OuterXML>
+            <IgnoreErrors>False</IgnoreErrors>
+            <XmlElement />
+            <ChildValues>True</ChildValues>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ProductXMLFull.xml</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row" size="3" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product Data\ProductXMLFull.xml" type="V_String" />
+            <Field name="﻿Product_ID" size="15" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product Data\ProductXMLFull.xml" type="V_String" />
+            <Field name="Category" size="15" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product Data\ProductXMLFull.xml" type="V_String" />
+            <Field name="Sub_Category" size="11" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product Data\ProductXMLFull.xml" type="V_String" />
+            <Field name="Product_Name" size="127" source="File: C:\Users\Rishi Kalpa Mukherje\Downloads\Alteryx Masterclass for Data Analytics\Alteryx Masterclass for Data Analytics\Data\Product Data\ProductXMLFull.xml" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_4920_e1d41a947324b445a30cf692342e6645_\Engine_4920_8c90ac191b8787418fba29a27916b801~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Row" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="294" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RISHIK~1\AppData\Local\Temp\Engine_4920_e1d41a947324b445a30cf692342e6645_\Engine_4920_c3e9e331e40ebc45be9a3cb576697ab3~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Product Data WorkFlow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a93f98e3-cc78-4a8d-b263-187e24c1db7c" />
+      <Telemetry>
+        <PreviousWorkflowId value="06afe4ef-7ab1-4fa5-a3dc-a8064c0204a3" />
+        <OriginWorkflowId value="06afe4ef-7ab1-4fa5-a3dc-a8064c0204a3" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

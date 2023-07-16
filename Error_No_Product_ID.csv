@@ -1,0 +1,3 @@
+order_line,order_id,order_date,ship_date,ship_mode,customer_id,product_id,sales,quantity,discount,profit
+8304,CA-2017-104024,2020-02-15,2020-02-20,Second Class,MD-17860,OFF-AR-11001972,9.41,7,20,0.71
+9600,CA-2017-167395,2020-05-20,2020-05-22,First Class,KM-16720,OFF-SU-11001935,4.36,2,0,0.17
