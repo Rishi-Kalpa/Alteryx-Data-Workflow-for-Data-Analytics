@@ -14,6 +14,7 @@ The dataset is based on customer demopraphics data, we are supposed to analyse t
 ![PDW](https://github.com/Rishi-Kalpa/Alteryx-Data-Workflow-for-Data-Analytics/assets/98646729/cb81e16e-f8e6-4307-aa82-d0bac0d75b1d)
 
 **Reporting**
+
 ![BR](https://github.com/Rishi-Kalpa/Alteryx-Data-Workflow-for-Data-Analytics/assets/98646729/548226bb-8029-45d3-968c-051f44fcac8a)
 
 ![Pie Chart](https://github.com/Rishi-Kalpa/Alteryx-Data-Workflow-for-Data-Analytics/assets/98646729/ca931598-0df2-4d6b-ad37-7954c16120fb)
